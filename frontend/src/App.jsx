@@ -5,6 +5,8 @@ import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import AuditList from './pages/AuditList';
 import AuditForm from './pages/AuditForm';
+import AuditDetail from './pages/AuditDetail';
+import Analytics from './pages/Analytics';
 import Login from './pages/Login';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="audits" element={<AuditList />} />
               <Route path="audits/new" element={<AuditForm />} />
+              <Route path="audits/:id" element={<AuditDetail />} />
+              <Route path="analytics" element={<Analytics />} />
             </Route>
           </Route>
         </Routes>
